@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        margin: 10px auto;
+        font-size: 20px;
+        display: block;
+        background-color: #fff;
+        border: 2px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    div {
+        width: 30px;
+        height: 30px;
+        background-color: teal;
+        float: left;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        margin: 5px;
+        font-family: arial;
+    }
+
+    .circle {
+        background-color: chartreuse;
+        /* color: grey; */
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <button>Click here!</button>
+    <script>
+        const btn = document.querySelector("button");
+        const addElement = function () {
+            const div = document.createElement('div');
+            const number = 1;
+            div.textContent = number;
+            document.body.appendChild(div);
+
+            // console.log(div);
+        }
+        btn.addEventListener('click', addElement)
+    </script>
+</body>
+
+</html>
